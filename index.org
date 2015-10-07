@@ -1,0 +1,8 @@
+* Plans
+
+1. Libvirt
+1. Google Keep
+
+* Recent
+
+[[file:frontend/arch.org][The Flux Architecture]]

@@ -1,0 +1,8 @@
+* The Flux Architecture
+
+1. Controller-views has a store, other views don't
+2. Multiple stores can register to the same action
+
+#+CAPTION: The Flux Architecture
+#+NAME: fig:flux-arch
+[[./imgs/flux.png]]

@@ -1,0 +1,5 @@
+*.sw*
+*~
+.#*
+
+/publish_html/
