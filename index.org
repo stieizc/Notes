@@ -1,7 +1,8 @@
 * Plans
 
-1. Libvirt
-1. Google Keep
+1. OpenStack
+1. Kefir / React Architecture
+1. Cacti / Nagios Multiple backends?
 
 * Recent
 
