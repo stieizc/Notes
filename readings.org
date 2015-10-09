@@ -1,0 +1,16 @@
+* Short Term
+
+** Programming
+
+1. SICP
+
+** Algorithms
+
+1. Introduction to Algorithms
+
+** Network
+
+1. Network Hardware
+1. TCP/IP
+
+* Long Term

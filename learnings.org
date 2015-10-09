@@ -1,0 +1,19 @@
+* Short Term
+
+** Coding
+
+*** C++
+
+1. CUDA / OpenCL
+
+*** GL
+
+1. WebGL / OpenGL
+
+*** Clojure / Clojurescript
+
+* Long Term
+
+*** Haskell
+
+*** Erlang
