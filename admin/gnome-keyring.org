@@ -1,0 +1,5 @@
+* Gnome Keyring
+
+1. pam
+1. remove ssh-agent from /etc/X11/Xsession.options
+1. export SSH_AGENT_SOCK from /run
