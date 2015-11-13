@@ -1,0 +1,18 @@
+#+TITLE: Git
+
+* 删除远程分支
+
+#+BEGIN_SRC bash
+git push origin --delete master 
+#+END_SRC
+
+* 修复邮箱和姓名
+
+#+BEGIN_SRC bash
+git filter-branch --env-filter '
+    oldemail="stieizc@gmail.com"
+    newemail="stieizc.33@gmail.com"
+    [ "$GIT_AUTHOR_EMAIL" = "$oldemail" ] && GIT_AUTHOR_EMAIL="$newemail"
+    [ "$GIT_COMMITTER_EMAIL" = "$oldemail" ] && GIT_COMMITTER_EMAIL="$newemail"
+    ' HEAD
+#+END_SRC

@@ -1,0 +1,21 @@
+* SOLID Principle
+
+* Single Responsibility
+
+Split Responsibilities, then assemble them
+
+* Open/Closed
+
+Be able to extend the functionality without changing the code
+
+* Liskov Substitution
+
+A subclass should be able to be substituted for its superclass
+
+* Interface Segregation
+
+Split Interface so that they have same reason to change
+
+* Dependency Inversion
+
+Insert interface between dependent layers, to decouple them
