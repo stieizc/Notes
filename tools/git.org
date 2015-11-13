@@ -12,7 +12,7 @@ git push origin --delete master
 git filter-branch --env-filter '
     oldemail="stieizc@gmail.com"
     newemail="stieizc.33@gmail.com"
-    [ "$GIT_AUTHOR_EMAIL" = "$oldemail" ] && GIT_AUTHOR_EMAIL="$newemail"
-    [ "$GIT_COMMITTER_EMAIL" = "$oldemail" ] && GIT_COMMITTER_EMAIL="$newemail"
+    [ "$GIT_AUTHOR_EMAIL" = "$oldemail" ] && GIT_AUTHOR_EMAIL="$newemail" || echo skip
+    [ "$GIT_COMMITTER_EMAIL" = "$oldemail" ] && GIT_COMMITTER_EMAIL="$newemail" || echo skip
     ' HEAD
 #+END_SRC
