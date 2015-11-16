@@ -1,0 +1,6 @@
+#+TITLE: Packstack Installation
+
+* Questions
+
+- Should interface names be automatically recognized based on subnet CIDR
+- Enter a comma separated  list of physical_network names with which flat networks can be created

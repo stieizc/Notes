@@ -1,0 +1,40 @@
+#+STARTUP: truncate
+#+TITLE: Keystone
+
+* References
+
+[[http://www.ibm.com/developerworks/cloud/library/cl-openstack-keystone/][IBM Dev on Keystone]]
+
+* Components
+
+** User
+
+Users are digital representations of a person, system, or service that uses OpenStack cloud services. Keystone ensures that incoming requests are coming from a valid login user that can be assigned resource-access tokens. Users are assigned to a particular tenant with specific role.
+
+** Tenant
+
+A tenant is a group used to isolate resources and/or users. Groups can be mapped to customers, projects or organizations.
+
+** Role
+
+A role includes a set of assigned user rights and privileges for performing a specific set of operations. A user token issued by Keystone includes a list of that user’s roles. Services then determine how to interpret those roles.
+
+** Credentials
+
+Credentials are data known only by a specific user who proves his or her identity. Examples include username and password, username and API key, or an authentication token.
+
+** Authentication
+
+Authentication is the act of confirming a user’s identity by validating a set of user-supplied credentials. Those credentials are initially a username and password or a username and API key. In response to the credentials, the identity service issues an authentication token that the user must provides for subsequent requests.
+
+** Token
+
+A token is an arbitrary bit of text used to access resources. Each token has a scope describing accessible resources. A token may be revoked at any time and is valid for a finite duration.
+
+** Service
+
+An OpenStack service, such as Compute (Nova), Object Storage (Swift), or Image Service (Glance), provides one or more endpoints through which users can access resources and perform operations.
+
+** Endpoint
+
+An endpoint is a network-accessible address, usually described by URL, from which services are accessed.
