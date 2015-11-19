@@ -3,7 +3,8 @@
 
 * References
 
-[[http://www.ibm.com/developerworks/cloud/library/cl-openstack-keystone/][IBM Dev on Keystone]]
+- [[http://www.ibm.com/developerworks/cloud/library/cl-openstack-keystone/][IBM Dev on Keystone]]
+- Kilo Install Guide: P41
 
 * Components
 

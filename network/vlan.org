@@ -1,0 +1,21 @@
+#+TITLE: VLAN
+
+* Setup
+
+** Access Port: connecting routers with hosts
+
+Switchport associated with a specific vlan.
+
+Traffic within a switch can be managed without tagging?
+
+** Trunk Port: connecting routers and pass all vlans to each other
+
+When a switchport is configured to pass frames from all VLANs and tag them with the VLAN IDs it is called a trunk port.
+
+Traffic between switches sharing vlan configurations needs to be tagged.
+
+Receiving trunk port strips the vlan tags, end hosts do not see them.
+
+*** Tagging Field
+
+12bit, 1 - 4095. No 0.

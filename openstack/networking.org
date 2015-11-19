@@ -1,0 +1,17 @@
+#+TITLE: Networking
+
+* Ethernet
+
+** Promiscuous Mode
+
+NICs can be configured for promiscuous mode, where they pass all Ethernet frames to the operating system, even if the MAC address does not match.
+
+Compute hosts should always have the appropriate NICs configured for promiscuous mode.
+
+* VLAN
+
+Note that if you are using VLANs on your physical switches to implement tenant isolation in your OpenStack cloud, you must ensure that all of your switchports are configured as trunk ports.
+
+* Reference
+
+- [[http://docs.openstack.org/networking-guide/][Openstack Networking Guide]]

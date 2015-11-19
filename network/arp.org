@@ -1,0 +1,5 @@
+#+TITLE: ARP
+
+* Notice
+
+ARP assumes that all machines that are in the same subnet are on the same local network. Network administrators must take care when assigning IP addresses and netmasks to hosts so that any two hosts that are in the same subnet are on the same local network, otherwise ARP does not work properly.
