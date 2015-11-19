@@ -1,5 +1,9 @@
 #+TITLE: Networking
 
+* Features
+
+- Provide overlapping IP addresses in different virtual networks: Routing & Iptables
+
 * Ethernet
 
 ** Promiscuous Mode
@@ -11,6 +15,12 @@ Compute hosts should always have the appropriate NICs configured for promiscuous
 * VLAN
 
 Note that if you are using VLANs on your physical switches to implement tenant isolation in your OpenStack cloud, you must ensure that all of your switchports are configured as trunk ports.
+
+* ARP
+
+** Notice
+
+Creating CIDR subnets including a multicast address or a loopback address cannot be used in an OpenStack environment. For example, creating a subnet using 224.0.0.0/16 or 127.0.1.0/24 is not supported.
 
 * Reference
 

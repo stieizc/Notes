@@ -1,0 +1,13 @@
+#+TITLE: DHCP
+
+* Protocol
+
+UDP, ip broadcast from port 68 to 255.255.255.255:67, not forwarded to other networks.
+
+* Other functions
+
+Notify the client with the default gateway.
+
+* Notice
+
+ARP assumes that all machines that are in the same subnet are on the same local network. Network administrators must take care when assigning IP addresses and netmasks to hosts so that any two hosts that are in the same subnet are on the same local network, otherwise ARP does not work properly.

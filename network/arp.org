@@ -1,5 +1,18 @@
 #+TITLE: ARP
 
+* Function
+
+Find Ether -> IP map.
+
+This does not overlap with the function of ethernet switch, which has no idea of IP protocol.
+
+* Procedure
+
+- Cached ARP table lookup: hit -> unicast ether packet
+- miss -> Ether Broadcast (MAC: all 1)
+- Source response with MAC & IP addresses
+- ARP Table update, unicast ether packet
+
 * Notice
 
 ARP assumes that all machines that are in the same subnet are on the same local network. Network administrators must take care when assigning IP addresses and netmasks to hosts so that any two hosts that are in the same subnet are on the same local network, otherwise ARP does not work properly.
