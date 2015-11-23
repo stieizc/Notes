@@ -4,4 +4,5 @@
 
 #+BEGIN_SRC bash
 puppet apply --debug --confdir=. -e '$somevar = hiera(foo) notify { $somevar: }'
+puppet apply --debug --confdir=. -e 'notify { hiera(foo): }'
 #+END_SRC
