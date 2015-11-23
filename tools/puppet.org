@@ -1,0 +1,7 @@
+#+TITLE: Puppet
+
+* Debug hierra
+
+#+BEGIN_SRC bash
+puppet apply --debug --confdir=. -e '$somevar = hiera(foo) notify { $somevar: }'
+#+END_SRC

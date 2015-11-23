@@ -1,27 +1,53 @@
 #+TITLE: Networking
 
+* Figures
+
+#+CAPTION: Overview of networking
+#+NAME: fig:openstack-networking-overview
+[[./imgs/open-stack-networking-overview.jpg]]
+
+#+CAPTION: Topology of overview of networking
+#+NAME: fig:openstack-networking-overview-topologiy
+[[./imgs/open-stack-networking-overview-topology.jpg]]
+
 * Features
 
 - Provide overlapping IP addresses in different virtual networks: Routing & Iptables
 
-* Ethernet
+** Floating IP
 
-** Promiscuous Mode
+[[https://www.digitalocean.com/company/blog/floating-ips-start-architecting-your-applications-for-high-availability/][Digital Ocean on Floating IPs]]
+
+A floating IP address is a service provided by Neutron. It's not using any DHCP service nor being set statically within the guest. As a matter of fact the guest's operating system has completely no idea that it was assigned a floating IP address. The delivery of packets to the interface with the assigned floating address is the responsibility of Neutron's L3 agent. Instances with assigned floating IP address can be accessed from the public network by the floating IP.
+
+Floating IP address and a private IP address can be used at the same time on a single network-interface. The private IP address is likely to be used for accessing the instance by other instances in the private network while the floating IP address would be used for accessing the instance from a public network. How to configure floating IP range describes Floating IP range document.
+
+* Protocols
+
+** Ethernet
+
+*** Promiscuous Mode
 
 NICs can be configured for promiscuous mode, where they pass all Ethernet frames to the operating system, even if the MAC address does not match.
 
 Compute hosts should always have the appropriate NICs configured for promiscuous mode.
 
-* VLAN
+** VLAN
 
 Note that if you are using VLANs on your physical switches to implement tenant isolation in your OpenStack cloud, you must ensure that all of your switchports are configured as trunk ports.
 
-* ARP
+** ARP
 
 ** Notice
 
 Creating CIDR subnets including a multicast address or a loopback address cannot be used in an OpenStack environment. For example, creating a subnet using 224.0.0.0/16 or 127.0.1.0/24 is not supported.
 
+* Components
+
+[[http://docs.openstack.org/networking-guide/intro_os_networking_overview.html][Overview]]
+
 * Reference
 
-- [[http://docs.openstack.org/networking-guide/][Openstack Networking Guide]]
+- [[http://docs.openstack.org/networking-guide/][OpenStack Networking Guide]]
+- [[http://www.slideshare.net/janghoonsim/open-stack-networking-vlan-gre][OpenStack Networking with VLAN & GRE]]
+  
