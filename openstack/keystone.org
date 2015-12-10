@@ -39,3 +39,8 @@ An OpenStack service, such as Compute (Nova), Object Storage (Swift), or Image S
 ** Endpoint
 
 An endpoint is a network-accessible address, usually described by URL, from which services are accessed.
+
+* Concepts
+
+[[http://stackoverflow.com/questions/19004503/the-relationship-between-endpoints-regions-etc-in-keystone-openstack][Tenents, regions, and other concepts]]
+[[https://linuxacademy.com/blog/linux/understanding-keystone-endpoints/][Understanding Keystone Endpoints]]

@@ -46,8 +46,18 @@ Creating CIDR subnets including a multicast address or a loopback address cannot
 
 [[http://docs.openstack.org/networking-guide/intro_os_networking_overview.html][Overview]]
 
+* Concepts
+
+** Ports
+
+Ports in OpenStack networking are realized using interfaces (mostly virtual) on the underlying hypervisor. IP addresses used for virtual machines, routers etc are actually stored with the Port entities. Given that Ports represent entry and exit points for data traffic and also the associated configurations such as interface and IP address, they play an important role in OpenStack networking.
+
+[[http://www.innervoice.in/blogs/2015/07/05/ports-in-openstack-neutron/][Ports in Openstack Neutron]]
+
+
 * Reference
 
 - [[http://docs.openstack.org/networking-guide/][OpenStack Networking Guide]]
 - [[http://www.slideshare.net/janghoonsim/open-stack-networking-vlan-gre][OpenStack Networking with VLAN & GRE]]
+- [[https://www.rdoproject.org/networking/networking-in-too-much-detail/][Detailed Networking]]
   

@@ -8,6 +8,10 @@
 
 Generic Routing Encapsulation (GRE) is a tunneling protocol developed by Cisco Systems that can encapsulate a wide variety of network layer protocols inside virtual point-to-point links over an Internet Protocol network.
 
+** References
+
+- [[http://assafmuller.com/2013/10/14/gre-tunnels-in-openstack-neutron/][GRE Tunnels in Neutron]]
+
 * Virtual eXtensible Local Arean Network
 
 It uses a VLAN-like encapsulation technique to encapsulate MAC-based OSI layer 2 Ethernet frames within layer 4 UDP packets, using 4789 as the default IANA-assigned destination UDP port number.
