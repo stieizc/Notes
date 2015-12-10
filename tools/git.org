@@ -16,3 +16,6 @@ git filter-branch --env-filter '
     [ "$GIT_COMMITTER_EMAIL" = "$oldemail" ] && GIT_COMMITTER_EMAIL="$newemail" || echo skip
     ' HEAD
 #+END_SRC
+* 删除大文件
+
+见[[http://naleid.com/blog/2012/01/17/finding-and-purging-big-files-from-git-history][Finding and Purging Big Files from Git History]]
