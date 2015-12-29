@@ -1,0 +1,9 @@
+#+TITLE: IPTables
+
+#+CAPTION: Traversing Order
+#+NAME: fig:traversing-order
+[[./imgs/iptables_traverse.jpg]]
+
+* Reference
+
+[[https://www.frozentux.net/iptables-tutorial/iptables-tutorial.html][Iptables Tutorial]]
