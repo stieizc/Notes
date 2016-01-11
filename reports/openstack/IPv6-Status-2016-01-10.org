@@ -63,7 +63,7 @@ Openstack不会自己配置ndp_proxy，需要人为／脚本在Openstack之外�
 
 | RA模式           | 地址分配模式     |                                                                                 |
 |------------------+------------------+---------------------------------------------------------------------------------|
-| SLAAC            | SLAAC            | EUI-64地址，上游路由器提供路由和RA                                              |
+| //               | SLAAC            | EUI-64地址，上游路由器提供路由和RA                                              |
 | DHCPv6-stateless | DHCPv6-stateless | EUI-64地址，上游路由器提供路由和RA。Openstack DHCPv6服务器提供其他信息，比如DNS |
 | DHCPv6-stateful  | DHCPv6-stateful  | 上游RA中指定M Flag，从Openstack DHCPv6服务器获取地址                            |
 
