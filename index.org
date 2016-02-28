@@ -1,9 +1,0 @@
-* Plans
-
-1. OpenStack
-1. Kefir / React Architecture
-1. Cacti / Nagios Multiple backends?
-
-* Recent
-
-[[file:frontend/arch.org][The Flux Architecture]]
